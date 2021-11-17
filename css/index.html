@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula investimentos</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="img/icones.ico">
+</head>
+<body>
+    <h1>investimentos</h1>
+    <footer>
+
+        <button id="0" class="botoesOff" name="buttonInvestimentos" onclick="rendaFixa()" onmouseenter="changeColor(0)" onmouseleave="colorBack(0)">Renda Fixa</button>
+        <button id="1" class="botoesOff" name="buttonInvestimentos" onclick="Dolar()" onmouseenter="changeColor(1)" onmouseleave="colorBack(1)">Moeda</button>
+        
+        <section id="rF">
+        <p>
+            Valor investido: 
+            <input type="number" id="inicial" placeholder="Valor investido inicialmente">
+            &nbsp Valor Mensal: 
+            <input type="number" id="mensal" placeholder="Valor investido mensalmente">
+        </p>
+        <p>
+            Taxa do CDI
+            <input type="number" id="cdi" placeholder="Insira a taxa de CDI" value=""><b>%</b>
+            &emsp; Periodo: 
+            <input type="number" id="tempo" placeholder="tempo de meses">
+        </p>
+        
+        <input type="radio"  name="img" id="i1" />
+        <label for="i1"  ><img src="img/poupança.png" width="75px" alt=""></label>
+        
+        <input type="radio"  name="img" id="i2" />
+        <label for="i2" ><img src="img/nubank.png" width="50px" alt=""></label>
+        
+        <input type="radio"  name="img" id="i3" />        
+        <label for="i3" ><img src="img/inter.png" width="60px" alt=""></label>
+        
+        <input type="radio"  name="img" id="i4" />        
+        <label for="i4" ><img src="img/pagbank.png" width="75px" alt=""></label>
+        
+        <input type="radio"  name="img" id="i5" />        
+        <label for="i5" ><img src="img/99.png" alt="" width="75px"></label>
+
+        <p> Resultado:  </p>
+        <div id="res"> </div>
+        <button id="botaoC"  onclick="calcular()">Calcular</button> 
+
+
+    </section>
+    <button id="back" class="botoesOff" name="voltar" onclick="voltar()" onmouseenter="changeColor(2)" onmouseleave="colorBack(2)"> voltar </button>
+
+    </footer>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+body {
+    background-color:rgb(15, 127, 255);
+    font: normal 15pt arial;
+    
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+section {
+    width: 650px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    display: none;
+
+}
+.botoesOff {
+    background-color: rgba(0, 128, 0, 0.932);
+    color: white;
+    border: 0;
+    padding: 10px;
+    font: normal 17pt Constantia;
+    border-radius: 10px;
+    margin-left: 10px;
+    float: left;
+}
+
+
+
+#back {
+    display: none;
+}
+
